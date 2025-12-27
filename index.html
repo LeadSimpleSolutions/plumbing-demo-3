@@ -1,96 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Professional Plumbing | Expert Local Service</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Plumbing | Leading Local Plumbing Experts</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap header-grid">
-      <a href="index.html" class="brand">
-        <img src="assets/header.jpg" alt="Logo" class="brand-logo">
-        <span class="brand-name">Professional Plumbing</span>
-      </a>
-      <nav>
-        <a href="index.html" class="nav-link active">Home</a>
-        <a href="services.html" class="nav-link">Services</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="contact.html" class="nav-link cta">Get Quote</a>
-      </nav>
-    </div>
-  </header>
+    <header class="site-header">
+        <div class="wrap flex-between">
+            <a href="index.html" class="brand">
+                <img src="assets/header.jpg" alt="Logo" class="brand-logo">
+                <span class="brand-name">PROFESSIONAL<br>PLUMBING</span>
+            </a>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="contact.html" class="nav-link btn btn-outline">Call (555) 555-5555</a>
+            </nav>
+        </div>
+    </header>
 
-  <main>
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div class="hero-content">
-          <div style="background: var(--accent); display: inline-block; padding: 5px 12px; border-radius: 4px; font-weight: bold; font-size: 0.8rem; margin-bottom: 20px;">★ 24/7 EMERGENCY DISPATCH</div>
-          <h1>Plumbing Problems? We Solve Them Fast.</h1>
-          <p class="lead" style="font-size: 1.3rem; margin-bottom: 30px; opacity: 0.9;">From leaky pipes to full water heater replacements, our master plumbers provide upfront pricing and guaranteed work.</p>
-          <div style="display: flex; gap: 20px;">
-            <span>✅ Licensed & Insured</span>
-            <span>✅ $0 Dispatch Fee</span>
-          </div>
-        </div>
-        <aside class="lead-card">
-          <h3>Request Service</h3>
-          <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 20px;">Priority response for online requests.</p>
-          <form action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="dcb2e950-571d-420d-9cc7-fb462047a864">
-            <input type="text" name="name" placeholder="Full Name" required>
-            <input type="tel" name="phone" placeholder="Phone Number" required>
-            <select name="service">
-              <option>Water Heater Issue</option>
-              <option>Clogged Drain</option>
-              <option>Emergency Leak</option>
-              <option>Other Service</option>
-            </select>
-            <button type="submit" class="btn-submit">Claim My Free Estimate</button>
-          </form>
-        </aside>
-      </div>
-    </section>
+    <main>
+        <section class="hero">
+            <div class="wrap hero-grid">
+                <div class="hero-content" data-scroll>
+                    <p style="color: var(--accent); font-weight: 900; margin-bottom: 15px;">★ RATED #1 IN THE TRI-STATE AREA</p>
+                    <h1 class="hero-h1">Expert Plumbing Solutions, 24/7.</h1>
+                    <p class="hero-p">From catastrophic emergencies to high-end bathroom remodels, our master plumbers deliver world-class service with upfront pricing.</p>
+                    <div style="display: flex; gap: 20px;">
+                        <a href="contact.html" class="btn btn-primary">Schedule Service</a>
+                        <a href="services.html" class="btn btn-outline" style="color:white; border-color:white;">View Our Services</a>
+                    </div>
+                </div>
+                <aside class="lead-card" data-scroll>
+                    <h3>Get a Free Quote</h3>
+                    <p>Fill out the form below for a 15-minute priority call-back.</p>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="YOUR_KEY">
+                        <div class="form-group"><input type="text" name="name" placeholder="Full Name" required></div>
+                        <div class="form-group"><input type="tel" name="phone" placeholder="Phone Number" required></div>
+                        <div class="form-group">
+                            <select name="service">
+                                <option>Emergency Leak Repair</option>
+                                <option>Water Heater Installation</option>
+                                <option>Drain & Sewer Cleaning</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Claim My Free Estimate</button>
+                    </form>
+                </aside>
+            </div>
+        </section>
 
-    <section class="section-padding wrap">
-      <h2 style="text-align: center; margin-bottom: 50px; font-size: 2.5rem; color: var(--primary);">Why Neighbors Trust Us</h2>
-      <div class="grid-3">
-        <div class="card">
-          <h4 style="color: var(--accent); margin-bottom: 10px;">Fast Response</h4>
-          <p>We arrive within the promised window, every time. No more waiting around all day.</p>
-        </div>
-        <div class="card">
-          <h4 style="color: var(--accent); margin-bottom: 10px;">Upfront Pricing</h4>
-          <p>You’ll see the total cost before we even pick up a wrench. No hidden fees or surprises.</p>
-        </div>
-        <div class="card">
-          <h4 style="color: var(--accent); margin-bottom: 10px;">Expert Techs</h4>
-          <p>All our plumbers are background-checked, licensed, and continuously trained on modern tech.</p>
-        </div>
-      </div>
-    </section>
-  </main>
+        <section class="section wrap">
+            <div class="text-center" style="margin-bottom: 80px;" data-scroll>
+                <h2 style="font-size: 3rem; color: var(--primary); margin-bottom: 20px;">Why Choose Professional Plumbing?</h2>
+                <p class="container-narrow">We’ve built our reputation on a foundation of integrity, technical mastery, and an unwavering commitment to our clients.</p>
+            </div>
+            <div class="grid-3">
+                <div class="card" data-scroll>
+                    <span class="card-icon">⏱️</span>
+                    <h3>Rapid Response</h3>
+                    <p>When you have a burst pipe, every minute counts. We maintain a fleet of fully stocked trucks ready to dispatch at a moment's notice.</p>
+                </div>
+                <div class="card" data-scroll>
+                    <span class="card-icon">💰</span>
+                    <h3>Fixed Upfront Pricing</h3>
+                    <p>No hourly rates. No "hidden fees." You’ll receive a firm quote before any work begins, giving you total control.</p>
+                </div>
+                <div class="card" data-scroll>
+                    <span class="card-icon">🏆</span>
+                    <h3>Lifetime Warranty</h3>
+                    <p>We stand behind our craftsmanship. Every repair and installation comes with our industry-leading workmanship guarantee.</p>
+                </div>
+            </div>
+        </section>
 
-  <footer class="site-footer">
-    <div class="wrap footer-grid">
-      <div>
-        <h4 style="color: white; margin-bottom: 20px;">Professional Plumbing</h4>
-        <p>Licensed & Insured Plumbing Experts serving the local area for over 15 years.</p>
-      </div>
-      <div>
-        <h4 style="color: white; margin-bottom: 20px;">Service Areas</h4>
-        <ul style="list-style: none;">
-          <li>Downtown District</li>
-          <li>Northside Neighborhoods</li>
-          <li>Western Suburbs</li>
-        </ul>
-      </div>
-      <div>
-        <h4 style="color: white; margin-bottom: 20px;">Contact</h4>
-        <p>📞 (555) 555-5555</p>
-        <p>✉️ service@demo.com</p>
-      </div>
-    </div>
-  </footer>
+        <section class="section" style="background: var(--primary); color: white;">
+            <div class="wrap">
+                <div class="text-center" style="margin-bottom: 60px;">
+                    <h2 style="font-size: 2.5rem;">How Our Process Works</h2>
+                </div>
+                <div class="process-grid">
+                    <div class="step" data-scroll>
+                        <div class="step-num">1</div>
+                        <h4>Contact</h4>
+                        <p>Call or book online 24/7.</p>
+                    </div>
+                    <div class="step" data-scroll>
+                        <div class="step-num">2</div>
+                        <h4>Inspect</h4>
+                        <p>We perform a full diagnostic.</p>
+                    </div>
+                    <div class="step" data-scroll>
+                        <div class="step-num">3</div>
+                        <h4>Approve</h4>
+                        <p>You review the flat-rate quote.</p>
+                    </div>
+                    <div class="step" data-scroll>
+                        <div class="step-num">4</div>
+                        <h4>Fix</h4>
+                        <p>We finish and clean up.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap footer-grid">
+            <div>
+                <h4 class="footer-title">PROFESSIONAL PLUMBING</h4>
+                <p>Licensed, bonded, and insured. Providing the highest standard of residential and commercial plumbing for over 20 years.</p>
+            </div>
+            <div>
+                <h4 class="footer-title">Popular Services</h4>
+                <ul class="footer-links">
+                    <li><a href="services.html">Drain Cleaning</a></li>
+                    <li><a href="services.html">Water Heaters</a></li>
+                    <li><a href="services.html">Emergency Repairs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Reviews</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title">Connect</h4>
+                <p>📞 (555) 555-5555<br>✉️ help@proplumbing.com<br>📍 123 Service Road, City, ST</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('[data-scroll]').forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>
