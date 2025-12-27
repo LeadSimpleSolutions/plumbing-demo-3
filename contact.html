@@ -1,67 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact Us | Professional Plumbing</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Professional Plumbing</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main style="padding: 100px 0;">
-    <section class="wrap hero-grid" style="color: var(--text-main); align-items: start;">
-      <div>
-        <h1 style="color: var(--primary); font-size: 3rem; margin-bottom: 20px;">Ready to help, 24/7.</h1>
-        <p style="font-size: 1.2rem; color: var(--text-muted); margin-bottom: 40px;">Whether it's a planned upgrade or a midnight emergency, our dispatch team is standing by.</p>
-        
-        <div style="display: grid; gap: 20px;">
-          <div class="card" style="display: flex; align-items: center; gap: 20px;">
-            <div style="font-size: 2rem;">📞</div>
-            <div>
-              <strong>Emergency Dispatch</strong>
-              <p style="font-size: 1.5rem; color: var(--accent); font-weight: 800;">(555) 555-5555</p>
+    <section class="section wrap hero-grid" style="padding-top: 150px; color: var(--text-dark);">
+        <div data-scroll>
+            <h1 style="font-size: 3.5rem; color: var(--primary);">Let's Get to Work.</h1>
+            <p style="font-size: 1.2rem; margin-bottom: 40px;">Available 24/7 for emergency service. For standard inquiries, our team responds within 60 minutes.</p>
+            
+            <div class="card" style="margin-bottom: 20px;">
+                <h4>Main Office</h4>
+                <p>123 Plumber Lane, Your City, ST 12345</p>
             </div>
-          </div>
-          <div class="card" style="display: flex; align-items: center; gap: 20px;">
-            <div style="font-size: 2rem;">📍</div>
-            <div>
-              <strong>Main Office</strong>
-              <p>123 Plumber Lane, Your City, ST 12345</p>
+            <div class="card">
+                <h4>Call Dispatch</h4>
+                <p style="font-size: 1.8rem; color: var(--accent); font-weight: 800;">(555) 555-5555</p>
             </div>
-          </div>
         </div>
-      </div>
-
-      <div class="lead-card">
-        <h3>Send a Message</h3>
-        <form id="contactForm">
-          <input type="hidden" name="access_key" value="dcb2e950-571d-420d-9cc7-fb462047a864">
-          <input type="text" name="name" placeholder="Name" required>
-          <input type="tel" name="phone" placeholder="Phone" required>
-          <textarea name="message" rows="5" placeholder="Tell us about your plumbing needs..."></textarea>
-          <button type="submit" class="btn-submit">Send Message Now</button>
-          <p id="result" style="text-align: center; margin-top: 15px;"></p>
-        </form>
-      </div>
+        <div class="lead-card" data-scroll>
+            <h3>Schedule a Technician</h3>
+            <form>
+                <div class="form-group"><input type="text" placeholder="Name"></div>
+                <div class="form-group"><input type="email" placeholder="Email Address"></div>
+                <div class="form-group"><input type="tel" placeholder="Phone Number"></div>
+                <div class="form-group">
+                    <textarea rows="6" placeholder="How can we help you today?"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+            </form>
+        </div>
     </section>
-  </main>
-
-  <script>
-    const form = document.getElementById('contactForm');
-    const result = document.getElementById('result');
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      result.textContent = "Sending...";
-      const formData = new FormData(form);
-      const response = await fetch("https://api.web3forms.com/submit", { method: "POST", body: formData });
-      const data = await response.json();
-      if (data.success) {
-        result.style.color = "green";
-        result.textContent = "Message Sent! We'll call you shortly.";
-        form.reset();
-      } else {
-        result.style.color = "red";
-        result.textContent = "Error. Please call us directly.";
-      }
-    });
-  </script>
 </body>
 </html>
